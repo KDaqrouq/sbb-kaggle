@@ -1,0 +1,11 @@
+# challenge data is not redistributed
+*.parquet
+!solution/v9cols/**/*.parquet
+train_labels.csv
+sample_submission.csv
+predictions.csv
+# generated caches and outputs
+solution/work*/
+__pycache__/
+.ipynb_checkpoints/
+*.log
