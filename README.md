@@ -5,14 +5,16 @@ change at that boundary, or does it only look different because of noise, outlie
 temporary shock?
 
 This repository documents the model I built for that question, on the KU-SBB structural break
-challenge (KU Applied AI Challenge 2026, hosted on Kaggle). It covers 24,000 labelled synthetic
-series and 4,000 test series, scored by ROC-AUC.
+challenge (KU Applied AI Challenge 2026, hosted on Kaggle), where it **finished 4th on the
+leaderboard**. The challenge has 24,000 labelled synthetic series and 4,000 test series, scored by
+ROC-AUC.
 
 | | ROC-AUC |
 |---|---|
 | Starter baseline (before/after features + logistic regression) | 0.708 |
 | **Final model, 5-fold cross-validation (whole series)** | **0.8669** |
 | **Final model, public leaderboard** | **0.86539** |
+| **Final standing** | **4th place** |
 
 The final model runs on **2 CPU cores, 8 GB of RAM, in under 30 minutes, with no network**, and
 two cold runs give identical probabilities.
